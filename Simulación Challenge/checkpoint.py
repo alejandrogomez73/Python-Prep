@@ -33,7 +33,12 @@ def EsPrimo(valor):
         EsPrimo(8) debe retornar False
     '''
     #Tu código aca:
-    return 'Funcion incompleta'
+    es_primo = True  
+    for i in range(2,valor):  
+        if (valor%i==0):  
+            es_primo=False  
+            break  
+    return es_primo
     
 def ClaseAnimal(especie, color):
     '''
