@@ -14,9 +14,9 @@ def Factorial(numero):
     #Tu código aca:
     if (type(numero)!=int):
         return None
-    if (numero<0):
+    if (numero<=0):
         return None
-    if (numero<=1):
+    if (numero==1):
         return 1
     numero=numero*Factorial(numero-1)
     return numero
@@ -33,10 +33,18 @@ def EsPrimo(valor):
         EsPrimo(8) debe retornar False
     '''
     #Tu código aca:
-    es_primo = True  
+    es_primo=True
+    if (type(valor)!=int):
+        return None
+    if (valor<=1):
+        #print("los primos son mayores que 2")
+        return None
+    if (valor==2):
+        return True      
+    
     for i in range(2,valor):  
         if (valor%i==0):  
-            es_primo=False  
+            es_primo = False  
             break  
     return es_primo
     
