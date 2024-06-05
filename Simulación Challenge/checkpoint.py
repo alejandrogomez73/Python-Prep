@@ -66,7 +66,7 @@ def ClaseAnimal(especie, color):
         a.CumpliAnios() -> debe devolver 2
         a.CumpliAnios() -> debe devolver 3
     '''
-    #Tu código aca:
+    #Tu código aca :
     class Animal:
         def __init__(self,especie,color):
             self.edad=0
