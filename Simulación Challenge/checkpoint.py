@@ -79,4 +79,4 @@ def ClaseAnimal(especie, color):
     
     return Animal(especie,color)
 
-    #Fin.
+    #Fin segundo.
